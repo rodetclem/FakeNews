@@ -70,17 +70,15 @@
 
 
         .title {
-            width:1470px;
+            
             box-shadow: 0px 0px 10px white;
             padding:40px;
             margin-left:30px;
             margin-top: 30px;
             background-color: rgb(169, 127, 253);
-            
         }
-        .nwsclass {
-            font-size:20px;
-        }
+        
+        
         .nwstitle {
             font-size:70px;
             line-height: 60px;
@@ -117,10 +115,36 @@
         }
         .page {
             display: grid;
-            grid-template-columns: max-content 1fr;
+            grid-template-columns: 1500px 400px;
             column-gap: 20px;
-
         }
+        @media (max-width:1500px) {
+        .page {
+            grid-template-columns: 1200px 300px;
+        }
+        }
+
+        @media (max-width:1100px) {
+        .page {
+            grid-template-columns: 900px 200px;
+        }
+        }
+        @media (max-width:900px) {
+        .page {
+            grid-template-columns: 700px 200px;
+        }
+        }
+        @media (max-width:700px) {
+        .page {
+            grid-template-columns: 550px 150px;
+        }
+        }
+        @media (max-width:500px) {
+        .page {
+            grid-template-columns: 375px 125px;
+        }
+        }
+
         .others {
             margin-top: 30px;
             margin-right:30px;
