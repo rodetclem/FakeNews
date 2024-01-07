@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Trustful News Source</title>
+    <style>
+        body {
+            background-color: mediumpurple;
+        }
+        p {
+            font-family:system-ui;
+            margin-top:0;margin-bottom:0;
+            
+        }
+        .head {
+            display:flex; height:60px;background-color: mediumpurple;
+            justify-content: space-between; 
+            flex-direction: row;
+            align-items: center;
+            border:black solid;
+            border-radius: 10px;
+        }
+        .home {
+            margin-left:15px; font-family: system-ui;
+            color:white; font-size:30px; 
+        }
+  
+        .download {
+            margin-right: 15px;
+            padding: 5px; padding-right:12px;padding-left: 12px;
+            color:red;
+            background-color:thistle; font-family: system-ui;
+            border:red solid; 
+            border-width: 1.5px;
+            border-radius: 3px; font-weight: 700;
+        }
+        .search-bar {
+            margin-right: 15px;
+            padding: 5px; padding-right:12px;padding-left: 12px;
+            color:white;
+            background-color: mediumpurple; font-family: system-ui;
+            border:white solid; 
+            border-width: 1.5px;
+            border-radius: 3px; 
+            font-size: 25px;
+        }
+        .search-bar::placeholder {
+            color:white;
+            
+        }
+        .leftheader {
+            width:500px;
+        }
+        .middleheader {
+            display: flex;
+            flex:1; 
+            justify-content: space-between;
+        }
+        
+        .middleheader p {
+            font-size:20px; padding:8px;
+            
+        }
+
+        .rightheader {
+            width: 500px;
+            
+        }
+
+
+        .title {
+            width:1470px;
+            box-shadow: 0px 0px 10px white;
+            padding:40px;
+            margin-left:30px;
+            margin-top: 30px;
+            background-color: rgb(169, 127, 253);
+            
+        }
+        .nwsclass {
+            font-size:20px;
+        }
+        .nwstitle {
+            font-size:70px;
+            line-height: 60px;
+            margin-top:30px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-weight: 300; font-size: smaller;
+        }
+        .details {
+            opacity:0.4;
+        }
+        .nwsreport {
+            font-size:20px; 
+        }
+        .nwsimage {
+            
+        }
+        .bigt,.bigm {
+            font-size: 25px; 
+        }
+        .nwspic {
+            width:100%; height:100%; object-fit: cover;
+            border-radius: 20px; box-shadow: 0px 0px 10px white;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top:30px;
+            column-gap: 40px;
+        }
+        .input {
+            text-align: end;
+        }
+        .page {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            column-gap: 20px;
+
+        }
+        .others {
+            margin-top: 30px;
+            margin-right:30px;
+            text-align:center;
+        }
+        .otherimg {
+            width:100%; border-radius: 10px;
+            object-fit: cover;
+        }
+        .others-ttle {
+            text-align: left; font-size: 15px; font-weight: 700; 
+        }
+        .author {
+            font-weight: normal;
+            opacity: 0.4; 
+            
+        }
+        .widget-art {
+            margin-bottom: 10px;
+        }
+        .widgets {
+            margin-bottom:50px; box-shadow: 0px 0px 5px white;
+            padding: 10px;
+            border:none;
+            border-radius: 10px;  background-color:  rgb(165, 105, 248);
+            transition-duration: 0.3s;
+        }
+        .widgets:hover {
+            box-shadow: 0px 0px 0px;
+        }
+        .subjects:hover {
+            background-color: white; font-weight: bold;
+
+        }
+        .subjects {
+            border:black solid; border-radius:20px;
+            transition-duration: 0.2s; cursor:pointer;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="leftheader">
+            <div>
+                <p class="home">TrustfulNews.com</p>
+            </div>
+        </div>
+        <div class="middleheader">
+            <div class="subjects">
+                <p>News&#10515;</p>
+            </div>
+    
+            <div class="subjects">
+                <p>Weather&#10515;</p>
+            </div>
+    
+            <div class="subjects">
+                <p>Sports&#10515;</p>
+            </div>
+    
+            <div class="subjects">
+                <p>More&#10515;</p>
+            </div>
+        </div>
+        
+        <div class="rightheader">
+            <div class="input">
+                <input class="search-bar" type="text" placeholder="&#x1F50D; Search...">
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="title">
+            <div>
+                <p class="nwsclass">International News</p>
+            </div>
+            <div>
+                <p class="nwstitle">Eiffel Tower to be Disassembled :<span class="subtitle"> Paris Takes Drastic Mesures to Combat Overtourism</span></p>
+            </div>
+            <div>
+                <p class="details">
+                    By <strong>Richard Fontaineau</strong>
+                </p>
+            </div>
+            <div>
+                <p class="details">Updated on August 4th 2023</p>
+            </div>
+            <div class="content">
+                <div class="nwsimage">
+                    <img class="nwspic"src="453695-la-tour-eiffel-fete-ses-130-ans-visuel.jpg">
+                </div>
+                <div class="nwsreport">
+                    <p style="margin-bottom:30px;"><span class="bigt">T</span>his morning, an unprecedented decision was made. The City of Paris has announced plans to deconstruct its iconic monument. This comes after months of discussion regarding the overwhelming challenges posed by mass tourism in the city.</p>
+                    <p style="margin-bottom:30px;"><span class=bigm>M</span>ass tourism caused havocs in the capital. The ever growing concerns over its consequences such as congestion, wear and tear of the structure and environmental impact, ultimately pushed forward this baffling resolution.</p>
+                    <p style="margin-bottom:30px;"><span class="bigm">A</span>nne Hidalgo, the city's mayor, explained the decision in a press conference: "The Eiffel Tower has become a victim of its own success. Overtourism is straining our city, and this move is necessary to preserve the well-being of Parisians and our cultural heritage."</p>
+                    <p><span class="bigm">T</span>he delicate disassembly process, is to be led by experts in engineering and preservation, and aims to potentially repurpose each piece of the monument. While some stakeholders worry about the economic consequences, others see this as an opportunity for Paris to redefine its tourism model and prioritize sustainability.</p>
+                </div>
+            </div>  
+        </div>
+
+        <div class="others">
+            <div class="widgets">
+                <div class="widgetimg">
+                    <img class="otherimg" src="imagens-site-20.png">
+                </div> 
+                <div class="others-ttle">
+                    <p class="widget-art">Christiano Ronaldo and Lionel Messi. The unexpected ultimate power couple.</p>
+                    <p class="author">By <strong>Henrique Dafonseca</strong></p>
+                    <p class="author">June 2023</p>
+                    
+                </div>    
+            </div>
+            <div class="widgets">
+                <div class="widgetimg">
+                    <img class="otherimg" src="welcome-to-texas-highway-road-sign.webp">
+                </div> 
+                <div class="others-ttle">
+                    <p>Texas to become Independent</p>
+                    <p class="widget-art">Protests become Uprisings</p>
+                    <p class="author">By <strong>Donald Trump</strong></p>
+                    <p class="author">July 2024</p>
+                </div>    
+            </div>
+            
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>
